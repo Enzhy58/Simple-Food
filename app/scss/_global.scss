@@ -1,5 +1,9 @@
 body {
-
+  background-color: #F9FAFF;
+  color: $default;
+  @extend %rubik-400;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 .sr-only {

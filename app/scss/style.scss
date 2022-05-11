@@ -3,4 +3,78 @@
 @import 'reset';
 @import 'global';
 
+
+.header {
+  padding: 60px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: flex;
+  &__list {
+    display: flex;
+    margin-right: 63px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 45px;
+  }
+  &__link {
+    transition: color 0.3s;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  &__link:hover {
+    color: $accent;
+  }
+  &__link--active {
+    color: $accent;
+  }
+}
+
+.user-nav {
+  display: flex;
+  padding-right: 42px;
+  &__item:not(:last-child) {
+     margin-right: 35px;
+  }
+  &__link {
+    position: relative;
+  }
+  &__link::before {
+    content: '';
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__link--search::before {
+    background-image: url("../images/icons/search.svg");
+  }
+  &__link--cart::before {
+    background-image: url("../images/icons/cart.svg");
+  }
+  &__num {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $accent;
+    top: -5px;
+    right: -26px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+  }
+}
+
+
 @import 'media';
