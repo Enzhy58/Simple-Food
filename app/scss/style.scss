@@ -76,5 +76,108 @@
   }
 }
 
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.2);
+  padding-bottom: 72px;
+  &__field {
+    max-width: 200px;
+    padding: 6px 15px;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    &::placeholder {
+      @extend %rubik-400;
+      font-size: 14px;
+      line-height: 130%;
+      color: #C2C2C2;
+    }
+  }
+  &__btn {
+    display: block;
+    @extend %rubik-500;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: $accent;
+    color: #fff;
+    padding: 13px 50px 13px 70px;
+    border-radius: 5px;
+    max-width: 200px;
+    position: relative;
+  }
+  &__btn::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    background-image: url("../images/icons/subscribe.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 130%;
+  }
+  &__contacts-item {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__contacts-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &__contacts-item--location::before {
+    background-image: url("../images/icons/location.svg");
+  }
+  &__contacts-item--phone::before {
+    background-image: url("../images/icons/phone.svg");
+  }
+  &__contacts-item--message::before {
+    background-image: url("../images/icons/message.svg");
+  }
+  &__contacts-link {
+    padding-left: 31px;
+  }
+  &__social-list {
+    display: flex;
+  }
+  &__social-item:not(:last-child) {
+    margin-right: 13px;
+  }
+  &__social-link {
+    display: block;
+    width: 39px;
+    height: 39px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  @extend %rubik-400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
 
 @import 'media';
