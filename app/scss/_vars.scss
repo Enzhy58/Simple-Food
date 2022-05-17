@@ -1,9 +1,10 @@
-$bg: #F9FAFF;
-$accent: #FF6838;
-$default: #31352B;
-$title: #363853;
+$silver-100: #F9FAFF;
+$orange-900: #FF6838;
+$dark: #31352B;
+$darkBlue-900: #363853;
 $white: #fff;
 $grey: #C2C2C2;
+$silver-200: #ECECEC;
 
 %opensans-700 {
   font-family: 'OpenSans-Bold', sans-serif;
@@ -31,6 +32,11 @@ $grey: #C2C2C2;
 }
 
 %rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-400italic {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }

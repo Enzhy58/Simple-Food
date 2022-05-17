@@ -36,14 +36,20 @@
 
           <ul class="user-nav">
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--search" href="#">
+              <a class="user-nav__link" href="#">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
                 <span class="sr-only">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="user-nav__item">
-              <a class="user-nav__link user-nav__link--cart" href="#">
+              <a class="user-nav__link" href="#">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
                 <span class="sr-only">
                   Корзина
                 </span>
@@ -77,14 +83,169 @@
               </p>
             </div>
 
-            <a class="banner__link-order" href="">Заказать</a>
-            <a class="banner__link-more" href="">Подробнее</a>
+            <a class="banner__link-order" href="#">Заказать</a>
+            <a class="more" href="#">Подробнее</a>
 
           </div>
 
           <img class="banner__img" src="images/deliveryman.png" alt="доставщик" width="560" height="660">
 
         </div>
+      </div>
+    </section>
+
+    <section class="popular page-section">
+      <div class="container">
+
+        <h2 class="popular__title title">Популярные категории</h2>
+
+        <ul class="filters">
+          <li class="filters__item">
+            <button class="btn filters__btn filters__btn--active filters__btn--burgers" type="button">Бургеры</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn filters__btn filters__btn--pizza" type="button">Пицца</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn filters__btn filters__btn--sandwiches" type="button">Сендвичи</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn filters__btn filters__btn--asian" type="button">Азиатская кухня</button>
+          </li>
+          <li class="filters__item">
+            <button class="btn filters__btn filters__btn--sets" type="button">Сеты</button>
+          </li>
+        </ul>
+
+        <ul class="popular__list">
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/1.png" alt="чизбургер с листьями салата" width="140"
+                  height="140">
+                <h3 class="product__name">Чизбургер с листьями салата</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">160 pуб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/2.png" alt="бифбургер" width="140" height="140">
+                <h3 class="product__name">Бифбургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">190 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/3.png" alt="королевский чизбургер" width="140"
+                  height="140">
+                <h3 class="product__name">Королевский чизбургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">260 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/4.png" alt="черный гамбургер" width="140" height="140">
+                <h3 class="product__name">Черный гамбургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">199 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/5.png" alt="чикен бургер" width="140" height="140">
+                <h3 class="product__name">Чикен бургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">180 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/1.png" alt="чизбургер с листьями салата" width="140"
+                  height="140">
+                <h3 class="product__name">Чизбургер с листьями салата</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">160 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </artic>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/2.png" alt="бифбургер" width="140" height="140">
+                <h3 class="product__name">Бифбургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">190 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/3.png" alt="королевский чизбургер" width="140"
+                  height="140">
+                <h3 class="product__name">Королевский чизбургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">260 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/4.png" alt="черный гамбургер" width="140" height="140">
+                <h3 class="product__name">Черный гамбургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">199 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="product" href="#">
+              <div class="product__top">
+                <img class="product__img" src="images/products/5.png" alt="чикен бургер" width="140" height="140">
+                <h3 class="product__name">Чикен бургер</h3>
+              </div>
+              <div class="product__bottom">
+                <p class="product__price">180 руб.</p>
+                <button class="btn product__btn" type="submit">В корзину</button>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <a class="more" href="#">Показать еще</a>
+
       </div>
     </section>
   </main>
@@ -99,8 +260,9 @@
             <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="39">
           </a>
           <form class="footer-top__form" action="#">
+            <label class="footer-top__label" for="email"></label>
             <input class="footer-top__field" type="email" placeholder="Ваш email" name="email" id="email" required>
-            <button class="footer-top__btn" type="submit">Подписаться</button>
+            <button class="btn footer-top__btn" type="submit">Подписаться</button>
           </form>
         </div>
 
@@ -173,7 +335,7 @@
             <ul class="footer-top__social-list">
               <li class="footer-top__social-item">
                 <a class="footer-top__social-link" href="#" target="_blank"
-                  style="background-image: url(images/icons/facebook.svg);">
+                  style="background-image: url(images/sprite.svg#facebook);">
                   <span class="sr-only">
                     Фейсбук
                   </span>
@@ -181,7 +343,7 @@
               </li>
               <li class="footer-top__social-item">
                 <a class="footer-top__social-link" href="#" target="_blank"
-                  style="background-image: url(images/icons/twitter.svg);">
+                  style="background-image: url(images/sprite.svg#twitter);">
                   <span class="sr-only">
                     Твиттер
                   </span>
@@ -189,7 +351,7 @@
               </li>
               <li class="footer-top__social-item">
                 <a class="footer-top__social-link" href="#" target="_blank"
-                  style="background-image: url(images/icons/instagram.svg);">
+                  style="background-image: url(images/sprite.svg#instagram);">
                   <span class="sr-only">
                     Инстаграм
                   </span>
