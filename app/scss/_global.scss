@@ -1,19 +1,42 @@
-html,
-body {
-  height: 100%;
-}
 
 body {
   background-color: $silver-100;
   color: $dark;
-  @extend %rubik-400;
+  font-family: $rubik, sans-serif;
+  font-weight: $fw-400;
   font-size: 20px;
   line-height: 1.5;
+}
+
+.logo {
+  transition: box-shadow 0.3s, opacity 0.3s;
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+    border-radius: 5px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+}
+
+.wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-main {
+.main {
   flex-grow: 1;
 }
 
@@ -36,22 +59,41 @@ main {
   margin: 0 auto;
 }
 
-.page-section {
-  padding-bottom: 124px;
-}
-
 .title {
   color: $darkBlue-900;
-  @extend %rubik-500;
+  font-family: $rubik, sans-serif;
+  font-weight: $fw-500;
   font-size: 36px;
   line-height: 1.3;
 }
 
 .btn {
-  @extend %rubik-400;
+  font-family: $rubik, sans-serif;
+  font-weight: $fw-400;
   font-size: 14px;
   line-height: 1.3;
   color: $white;
   background-color: $orange-900;
   border-radius: 5px;
+}
+
+.btn--underline {
+  color: $darkBlue-900;
+  text-decoration: underline;
+  transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+    border-radius: 5px;
+    color: $darkBlue-900;
+  }
+    
+  &:hover {
+    color: $orange-900;
+  }
+    
+  &:active {
+    text-shadow: 2px 2px 5px rgba($dark, 0.5);
+    color: $dark;
+  }
 }

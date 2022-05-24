@@ -3,45 +3,16 @@ $orange-900: #FF6838;
 $dark: #31352B;
 $darkBlue-900: #363853;
 $white: #fff;
+$black: #000;
 $grey: #C2C2C2;
 $silver-200: #ECECEC;
+$hover-bg: #FFF2ED;
 
-%opensans-700 {
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-weight: 700;
-}
 
-%opensans-600 {
-  font-family: 'OpenSans-SemiBold', sans-serif;
-  font-weight: 600;
-}
-
-%opensans-400 {
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%rubik-700 {
-  font-family: 'Rubik-Bold', sans-serif;
-  font-weight: 700;
-}
-
-%rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%rubik-400italic {
-  font-family: 'Rubik-Regular', sans-serif;
-  font-weight: 400;
-}
-
-%rubik-300 {
-  font-family: 'Rubik-Light', sans-serif;
-  font-weight: 300;
-}
+$rubik: "Rubik";
+$opensans: "OpenSans";
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
