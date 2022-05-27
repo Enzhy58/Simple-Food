@@ -75,6 +75,33 @@ body {
   color: $white;
   background-color: $orange-900;
   border-radius: 5px;
+  transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+
+  &:focus {
+    background-color: $hover-bg;
+  }
+  
+  &:focus,
+  &:hover,
+  &:active {
+    border-radius: 5px;
+    color: $orange-900;
+  }
+  
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+  }
+  
+  &:hover {
+    background-color: rgba($white, 0.1);
+  }
+  
+  &:active {
+    box-shadow: none;
+    background-color: $hover-bg;
+  }
+
 }
 
 .btn--underline {
@@ -96,4 +123,5 @@ body {
     text-shadow: 2px 2px 5px rgba($dark, 0.5);
     color: $dark;
   }
+  
 }
