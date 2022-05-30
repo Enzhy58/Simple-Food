@@ -1,0 +1,34 @@
+.application {
+  margin-bottom: 120px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 540px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__download {
+    display: flex;
+  }
+
+  &__link {
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+  }
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Food - сервис быстрой доставки | Главная страница</title>
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+      {% include 'app/module/_delivery/_delivery.html' %}
+      {% include 'app/module/_categories/_categories.html' %}
+      {% include 'app/module/_benefit/_benefit.html' %}
+      {% include 'app/module/_restaurants/_restaurants.html' %}
+      {% include 'app/module/_reviews/_reviews.html' %}
+      {% include 'app/module/_application/_application.html' %}
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+  </div>
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
