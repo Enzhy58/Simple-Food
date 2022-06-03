@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 194px;
+  padding-bottom: 194px;
 
   &__title {
     text-align: center;
@@ -9,7 +9,7 @@
   &__inner {
     display: flex;
     align-items: center;
-    margin-left: 90px;
+    justify-content: center;
   }
 
   &__img {
@@ -19,9 +19,10 @@
   }
 
   &__text {
-    max-width: 570px;
+    max-width: 650px;
     font-style: italic;
     margin-bottom: 30px;
+    padding: 0 50px;
     position: relative;
 
     &::after,
@@ -37,13 +38,13 @@
 
     &::after {
       top: 0;
-      left: -7%;
+      left: 0;
       background-image: url("../images/icons/reviews-left.svg");
     }
 
     &::before {
       bottom: 0;
-      right: -7%;
+      right: 0;
       background-image: url("../images/icons/reviews-right.svg");
     }
 
@@ -52,6 +53,7 @@
   &__name {
     display: block;
     font-weight: $fw-500;
+    font-size: 20px;
     line-height: 1.3;
     color: $orange-900;
     margin-bottom: 6px;
@@ -107,29 +109,186 @@
 
   }
 
+  .slick-disabled circle {
+    stroke: $orange-900;
+  }
+
+  .slick-disabled path {
+    fill: $orange-900;
+  }
+
   .slick-prev,
   .slick-next {
     position: absolute;
-    bottom: -24%;
+    bottom: -26%;
 
-    &:focus {
+    & svg {
+      transition: box-shadow 0.3s, background-color 0.3s;
+    }
+
+    & path {
+      transition: fill 0.3s;
+    }
+
+    & circle {
+      transition: stroke 0.3s;
+    }
+
+    &:focus svg {
       box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
       border-radius: 50%;
     }
 
-    &:hover {
-      box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+    &:hover circle{
+      stroke: rgba($orange-900, 0.5);
+    }
+
+    &:hover path {
+      fill: rgba($orange-900, 0.5);
+    }
+
+    &:hover svg {
+      background-color: $hover-bg;
       border-radius: 50%;
     }
+
+    &:active circle {
+      display: none;
+    }
+    
+    &:active path {
+      fill: $orange-900;
+    }
+    
+    &:active svg {
+      background-color: $hover-bg;
+      border-radius: 50%;
+    }  
 
   }
 
   .slick-prev {
-    right: 56%;
+    right: 50%;
+    transform: translateX(-60px);
   }
 
   .slick-next {
-    right: 40%;
+    right: 50%;
+    transform: translateX(100px);
+  }
+
+}
+
+
+@media (max-width: 992px) {
+
+  .reviews {
+    padding-bottom: 140px;
+
+    &__img {
+      margin-right: 10px;
+      width: 250px;
+      height: 250px;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .reviews {
+    padding-bottom: 80px;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    .slick-prev,
+    .slick-next {
+      bottom: 75%;
+      transform: translateX(0);
+    }
+    
+    .slick-prev {
+      right: 83%;
+    }
+    
+    .slick-next {
+      right: 12%;
+    }
+
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .reviews {
+
+    &__img {
+      width: 200px;
+      height: 200px;
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .reviews {
+    padding-bottom: 40px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__text {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    }
+
+    &__name {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__name,
+    &__post {
+      text-align: left;
+      padding: 0 30px;
+    }
+
+    &__post {
+      display: block;
+    }
+
+    .slick-prev,
+    .slick-next {
+      bottom: 80%;
+    }
+
+    .slick-prev {
+      right: 75%;
+    }
+
+    .slick-next {
+      right: 15%;
+    }
+    
   }
 
 }

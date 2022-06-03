@@ -26,6 +26,11 @@
     margin-bottom: 24px;
   }
 
+  &__logo-img {
+    width: 200px;
+    height: 39px;
+  }
+
   &__field {
     max-width: 200px;
     padding: 13px 15px;
@@ -175,7 +180,11 @@
 
   &__social-link circle,
   &__social-link path {
-    transition: all 0.3s;
+    transition: fill 0.3s;
+  }
+
+  &__social-link svg{
+    transition: box-shadow 0.3s;
   }
 
   &__social-link:focus svg {
@@ -205,6 +214,43 @@
 
   &__social-link:active path {
     fill: $orange-900;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  .footer {
+
+    &__top {
+      padding-bottom: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__box {
+      margin-bottom: 30px;
+    }
+
+    &__items {
+      flex-direction: column;
+      order: 3;
+    }
+
+    &__box,
+    &__items {
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+    }
+    
+  }
+
+  .contacts {
+    order: 2;
+    margin-bottom: 30px;
   }
 
 }
