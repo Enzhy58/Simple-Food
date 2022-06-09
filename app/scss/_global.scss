@@ -131,6 +131,7 @@ body {
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     padding: 24px 0;
   }
 
@@ -188,6 +189,7 @@ body {
 }
 
 @media (max-width: 576px) {
+
  body {
    font-size: 16px;
  }
@@ -195,6 +197,19 @@ body {
  .title {
    font-size: 24px;
  }
+
+ .breadcrumbs {
+
+   &__item {
+
+     &::after {
+       top: 35%;
+     }
+
+   }
+   
+ }
+
 }
 
 @media (max-width: 480px) {

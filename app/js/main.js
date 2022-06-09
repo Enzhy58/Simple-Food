@@ -75,6 +75,15 @@ $(function(){
       $('.menu-left').addClass('menu-left--close');
     });
 
+  $('.filter__btn-open').on('click', function () {
+    $('.filter').addClass('filter--active');
+  });  
+  $('.filter__btn-close').on('click', function () {
+    $('.filter').removeClass('filter--active');
+  });
+  
+ 
+
   $('.reviews__slider').slick({
     dots: true,
     infinite: false,
@@ -89,7 +98,7 @@ $(function(){
       }
     ]
   });
-  $('.restaurants__list').slick({
+  $('.restaurants__list, .discounts__list').slick({
     dots: true,
     arrows: false,
     slidesToShow: 3,
@@ -116,7 +125,7 @@ $(function(){
     ]
   });
 
-  $('.menu__btn, .menu-left__btn').on('click', function () {
+  $('.menu__btn, .menu-left__btn, .filter__btn-open, .filter__btn-close').on('click', function () {
     $('.wrapper').toggleClass('wrapper__fixed');
   });
   
