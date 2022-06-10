@@ -1,4 +1,7 @@
+
+
 $(function(){
+  
 
   var $range = $(".filter-price__input");
   var $inputFrom = $(".filter-price__from");
@@ -138,14 +141,44 @@ $(function(){
     $('.wrapper').toggleClass('wrapper__fixed');
   });
 
-  $(".product-item__stars").rateYo({
+  $(".product-item__stars, .reviews__stars").rateYo({
     rating: 4,
     starWidth: "16px",
     normalFill: "#C1C1C1",
     ratedFill: "#FFB800",
     spacing: "6px"
   });
+
+  $('.product-tabs__top-items').on('click', function (e){
+    e.preventDefault();
+    $('.product-tabs__top-items').removeClass('product-tabs__top-items--active');
+    $(this).addClass('product-tabs__top-items--active');
+
+    $('.product-tabs__content-items').removeClass('product-tabs__content-items--active');
+    $($(this).attr('href')).addClass('product-tabs__content-items--active');
+  });
   
   var mixer = mixitup('.categories__list, .catalog__list');
 });
+
+const btns = document.querySelectorAll('.counter__btn');
+
+
+btns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    const direction = this.dataset.direction;
+    const inp = this.parentElement.querySelector('.counter__value');
+    const currentValue = +inp.value;
+    let newValue;
+
+    if (direction === 'plus') {
+      newValue = currentValue + 1;
+    } else {
+      newValue = currentValue - 1 > 0 ?
+        currentValue - 1 : 0;
+    }
+    inp.value = newValue;
+  });
+});
+
 
