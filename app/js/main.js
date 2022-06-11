@@ -137,6 +137,12 @@ $(function(){
     ]
   });
 
+  $('.product-item__list').slick({
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/product-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/product-next.svg" alt=""></button>',
+  });
+
   $('.menu__btn, .menu-left__btn, .filter__btn-open, .filter__btn-close').on('click', function () {
     $('.wrapper').toggleClass('wrapper__fixed');
   });
