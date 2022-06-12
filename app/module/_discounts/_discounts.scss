@@ -108,11 +108,15 @@
 }
 
 @media (max-width: 768px) {
+
   .discounts {
+
     &__title {
       text-align: center;
     }
+
   }
+  
 }
 
 @media (max-width: 480px) {
